@@ -64,6 +64,6 @@ Used API: [OpenWeather](https://openweathermap.org/).
 - Pressure
 - Humidity
 
-#### For educational purposes.
+_For educational purposes_.
 
-Made with ❤️ and Python & Meqdad.
+Made with ❤️ and Python & [Meqdad](https://twitter.com/MeqdadDev).
