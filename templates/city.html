@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ city_name }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <section>
+      <h1>Welcome to {{ city_name }}</h1>
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr>
+              <th>Location Longitude</th>
+              <th>Location Latitude</th>
+              <th>Weather</th>
+              <th>Weather Description</th>
+              <th>Temperature</th>
+              <th>Pressure</th>
+              <th>Humidity</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr>
+              <td>{{ city_location_lon }}</td>
+              <td>{{ city_location_lat }}</td>
+              <td>{{ city_weather }}</td>
+              <td>{{ city_weather_description }}</td>
+              <td>{{ city_temperature }}</td>
+              <td>{{ city_pressure }}</td>
+              <td>{{ city_humidity }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- follow me template -->
+    <div class="made-with-love">
+      Made with
+      <i>♥</i> by
+      <a target="_blank" href="https://twitter.com/MeqdadDev"
+        >Meqdad Darweesh</a
+      >
+    </div>
+  </body>
+</html>
+<!--
+
+    <h1>Welcome to {{ city_name }}</h1>
+    <h4>City Location: {{ city_location }}</h4>
+    <h4>City Weather: {{ city_weather }}</h4>
+    <h4>Weather Description: {{ city_weather_description }}</h4>
+    <h4>City Temperature: {{ city_temperature }}</h4>
+    <h4>City Pressure: {{ city_pressure }}</h4>
+    <h4>City Humidity: {{ city_humidity }}</h4>
+-->
