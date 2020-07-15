@@ -1,6 +1,6 @@
 # City Weather App
 
-## using Flask framework
+## Using Flask framework
 
 Web app for city weather info using **Flask framework**
 
@@ -9,6 +9,7 @@ A web app for getting the weather info of a city by providing the name of the ci
 Used API: [OpenWeather](https://openweathermap.org/).
 
 ### API Response sample:
+
 ```
 {
 	"coord": {
@@ -52,5 +53,17 @@ Used API: [OpenWeather](https://openweathermap.org/).
 	"cod": 200
 }
 ```
+
+### Extracted Data from API:
+
+- City Location Longitude
+- City Location Latitude
+- Weather
+- Weather Description
+- Temperature
+- Pressure
+- Humidity
+
 #### For educational purposes.
+
 Made with ❤️ and Python & Meqdad.
