@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{{ city_name }} Weather</title>
+</head>
+
+<body>
+    <div class="table-title">
+        <h3>{{city_name}} Weather</h3>
+    </div>
+    <table class="table-fill">
+        <thead>
+            <tr>
+                <th class="text-left">Measurement</th>
+                <th class="text-left">Value</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover">
+            <tr>
+                <td class="text-left">Longitude</td>
+                <td class="text-left">{{longitude}}</td>
+            </tr>
+            <tr>
+                <td class="text-left">Latitude</td>
+                <td class="text-left">{{latitude}}</td>
+            </tr>
+            <tr>
+                <td class="text-left">Weather</td>
+                <td class="text-left">{{weather}}</td>
+            </tr>
+            <tr>
+                <td class="text-left">Weather Description</td>
+                <td class="text-left">{{weather_description}}</td>
+            </tr>
+            <tr>
+                <td class="text-left">Temperature</td>
+                <td class="text-left">{{temperature}}°C</td>
+            </tr>
+            <tr>
+                <td class="text-left">Pressure</td>
+                <td class="text-left">{{pressure}}</td>
+            </tr>
+            <tr>
+                <td class="text-left">Humidity</td>
+                <td class="text-left">{{humidity}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+<!-- 
+    <html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Table Style</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+<div class="table-title">
+<h3>Data Table</h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Month</th>
+<th class="text-left">Sales</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">January</td>
+<td class="text-left">$ 50,000.00</td>
+</tr>
+<tr>
+<td class="text-left">February</td>
+<td class="text-left">$ 10,000.00</td>
+</tr>
+<tr>
+<td class="text-left">March</td>
+<td class="text-left">$ 85,000.00</td>
+</tr>
+<tr>
+<td class="text-left">April</td>
+<td class="text-left">$ 56,000.00</td>
+</tr>
+<tr>
+<td class="text-left">May</td>
+<td class="text-left">$ 98,000.00</td>
+</tr>
+</tbody>
+</table>
+  
+
+  </body>
+ -->
