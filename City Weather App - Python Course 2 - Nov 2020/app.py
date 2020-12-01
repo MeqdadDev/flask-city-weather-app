@@ -17,16 +17,16 @@ def home():
     return render_template('home.html')
 
 
-def get_weather_data():
+def get_weather_data(city_name):
     raw_data = requests.get(
-        'https://api.openweathermap.org/data/2.5/weather?q=London&appid={Get your API key from OpenWeatherMap}')
+        f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={Get your API key from OpenWeatherMap}')
     return raw_data.json()
 
 
 @app.route('/city', methods=['POST'])
 def city():
     name = request.form['city_name']
-    data = get_weather_data()
+    data = get_weather_data(name)
     location_data = data['coord']
     location_long = location_data['lon']
     location_lat = location_data['lat']
